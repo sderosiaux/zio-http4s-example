@@ -13,7 +13,7 @@ lazy val root = (project in file("."))
       "dev.zio"    %% "zio-interop-cats"    % "2.1.4.0"
     )
   )
-
+enablePlugins(JavaAppPackaging)
 scalacOptions ++= Seq(
   "-deprecation",
   "-encoding",
